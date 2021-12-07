@@ -28,7 +28,9 @@ export const filterOceania = (countries) => {
 // OUTPUT: only countries that include the letters 'au'
 // REQS: use .filter
 
-export const filterAu = (countries) => {};
+export const filterAu = (countries) => {
+  return countries.filter((country) => country.name.toLowerCase().includes('au'));
+};
 
 // INPUT: the array of brands from data.js
 // OUTPUT: an array of all the sneakers brands
