@@ -12,7 +12,9 @@ export const getCountryNames = (countries) => {
 // OUTPUT: an array of the names and their iso2 country codes using .map
 // REQS: use .map
 
-export const getCountryCodes = (countries) => {};
+export const getCountryCodes = (countries) => {
+  return countries.map((country) => [country.name, country.iso2]);
+};
 
 // INPUT: the array of countries from data.js
 // OUTPUT: only countries in Oceana
